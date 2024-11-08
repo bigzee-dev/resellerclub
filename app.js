@@ -5,6 +5,9 @@ const dotenv = require('dotenv').config()
 const apiKey = process.env.API_Key;
 const resellerId = process.env.RESELLER_ID;
 
+console.log(apiKey)
+console.log(resellerId)
+
 // Function to check domain availability
 async function checkDomainAvailability(fullDomain) {
   // Split the domain into the name and the TLD
