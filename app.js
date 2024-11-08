@@ -34,7 +34,7 @@ async function checkDomainAvailability(fullDomain) {
       },
     });
     
-    console.log("response: "response)
+    console.log("response: ",response)
     const availability = response.data;
     console.log("response.data:", availability);
 
