@@ -48,7 +48,7 @@ async function checkDomainAvailability(fullDomain) {
 }
 
 // Run the function with a domain as a single string
-const domainToCheck = 'bigzee.app';  // Replace with the domain you want to check
+const domainToCheck = 'mobilemoney.co.bw';  // Replace with the domain you want to check
 checkDomainAvailability(domainToCheck);
 
 
