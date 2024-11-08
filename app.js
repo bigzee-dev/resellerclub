@@ -1,8 +1,9 @@
 const axios = require('axios');
+const dotenv = require('dotenv').config()
 
 // Replace these with your actual ResellerClub API key and reseller ID
-const apiKey = 'gqdm0PalbJ8OvLMOq5uWZHhJwKCNrFx9';
-const resellerId = 1264820;
+const apiKey = process.env.API_Key;
+const resellerId = process.env.RESELLER_ID;
 
 // Function to check domain availability
 async function checkDomainAvailability(fullDomain) {
