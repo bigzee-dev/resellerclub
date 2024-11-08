@@ -2,7 +2,7 @@ const axios = require('axios');
 const dotenv = require('dotenv').config()
 
 // Replace these with your actual ResellerClub API key and reseller ID
-const apiKey = process.env.API_Key;
+const apiKey = process.env.API_KEY;
 const resellerId = process.env.RESELLER_ID;
 
 console.log(apiKey)
