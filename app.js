@@ -10,27 +10,27 @@ console.log(resellerId)
 
 // Function to check domain availability
 async function checkDomainAvailability(fullDomain) {
-  // Split the domain into the name and the TLD
-  const domainParts = fullDomain.split('.');
+  // // Split the domain into the name and the TLD
+  // const domainParts = fullDomain.split('.');
   
-  // The domain name is the first part
-  const domainName = domainParts[0];
+  // // The domain name is the first part
+  // const domainName = domainParts[0];
   
-  // The TLD is everything after the first dot (joined together)
-  const tld = domainParts.slice(1).join('.');
+  // // The TLD is everything after the first dot (joined together)
+  // const tld = domainParts.slice(1).join('.');
   
-  console.log("domain: ", domainName)
-  console.log("tld: ", tld)
+  // console.log("domain: ", domainName)
+  // console.log("tld: ", tld)
   // ResellerClub API endpoint for checking domain availability
-  const endpoint = `https://domaincheck.httpapi.com/api/domains/available.json`;
+  const endpoint = `https://domaincheck.httpapi.com/api/domains/thirdlevelname/available.json`;
 
   try {
     const response = await axios.get(endpoint, {
       params: {
         'auth-userid': resellerId,
         'api-key': apiKey,
-        'domain-name': domainName,
-        'tlds': tld,
+        'domain-name': 'mobilemoney',
+        'tlds': '*.co.bw',
       },
     });
     
