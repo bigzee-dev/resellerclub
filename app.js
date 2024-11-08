@@ -49,7 +49,7 @@ async function checkDomainAvailability(fullDomain) {
 }
 
 // Run the function with a domain as a single string
-const domainToCheck = 'mobilemoney.co.bw';  // Replace with the domain you want to check
+const domainToCheck = 'bbc.co.uk';  // Replace with the domain you want to check
 checkDomainAvailability(domainToCheck);
 
 
