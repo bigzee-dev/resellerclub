@@ -30,7 +30,7 @@ async function checkDomainAvailability(fullDomain) {
         'auth-userid': resellerId,
         'api-key': apiKey,
         'domain-name': 'mobilemoney',
-        'tlds': '*.co.bw',
+        'tlds': 'co.bw',
       },
     });
     
@@ -50,6 +50,6 @@ async function checkDomainAvailability(fullDomain) {
 
 // Run the function with a domain as a single string
 const domainToCheck = 'bbc.co.uk';  // Replace with the domain you want to check
-checkDomainAvailability(domainToCheck);
+checkDomainAvailability();
 
 
