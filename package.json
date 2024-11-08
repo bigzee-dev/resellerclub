@@ -2,6 +2,9 @@
   "dependencies": {
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
-    "whois": "^2.14.2"
+    "whois": "^2.14.2",
+    "whois-json": "^2.0.4",
+    "whois-parsed": "^1.0.14",
+    "whois-parser": "^1.0.3"
   }
 }
