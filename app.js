@@ -33,9 +33,10 @@ async function checkDomainAvailability(fullDomain) {
         'tlds': tld,
       },
     });
-
+    
+    console.log("response: "response)
     const availability = response.data;
-    console.log(`Domain availability response:`, availability);
+    console.log("response.data:", availability);
 
     if (availability[fullDomain] && availability[fullDomain].status === 'available') {
       console.log(`The domain ${fullDomain} is available.`);
