@@ -59,7 +59,7 @@ async function getDomainPricing(domain) {
   try {
     const extension = domain.split('.').pop(); // Get the domain extension (e.g., 'com')
     
-    const response = await axios.get('https://domaincheck.httpapi.com/v2/domain/price.json', {
+    const response = await axios.get('https://domaincheck.httpapi.com/api/domain/price.json', {
       params: {
         'auth-userid': resellerId,
         'api-key': apiKey,
